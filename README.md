@@ -141,3 +141,9 @@ Todos os dados utilizados são de caráter normativo e instrucional, não envolv
 ## 🧩 Considerações Finais
 
 O projeto demonstra como sistemas baseados em RAG podem ser utilizados como ferramentas de apoio acadêmico, promovendo melhor compreensão das normas e maior autonomia por parte dos estudantes durante o processo de elaboração do TCC.
+
+---
+
+## 🤖 Link para testar o chatbot
+
+[Clique aqui](https://vitor-leal-c2rmk.chat.blip.ai/?appKey=dGNjMTI6Y2ZhMjgzOTAtMTI1Yi00ZTYzLTg1YTAtNGRhMjk1NGVlMzUx)
