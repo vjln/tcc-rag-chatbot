@@ -22,7 +22,7 @@ app.use(
   }),
 );
 
-const openai = new OpenAI({ apiKey: process.env.BANANAMADURA });
+const openai = new OpenAI({ apiKey: process.env.API_KEY });
 
 const VECTOR_STORE_ID = (process.env.VECTOR_STORE_ID || "").trim();
 const API_SECRET = (process.env.API_SECRET || "").trim();
@@ -34,7 +34,7 @@ function requireEnv(name, value) {
   }
 }
 
-requireEnv("BANANAMADURA", process.env.BANANAMADURA);
+requireEnv("API_KEY", process.env.API_KEY);
 requireEnv("VECTOR_STORE_ID", VECTOR_STORE_ID);
 requireEnv("API_SECRET", API_SECRET);
 

@@ -3,7 +3,7 @@ dotenv.config({ path: "../.env" });
 
 import OpenAI from "openai";
 
-const openai = new OpenAI({ apiKey: process.env.BANANAMADURA });
+const openai = new OpenAI({ apiKey: process.env.API_KEY });
 
 const VECTOR_STORE_ID = process.env.VECTOR_STORE_ID;
 

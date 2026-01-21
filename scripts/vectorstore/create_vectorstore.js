@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: "../.env" });
 import OpenAI from "openai";
 
-const openai = new OpenAI({ apiKey: process.env.BANANAMADURA });
+const openai = new OpenAI({ apiKey: process.env.API_KEY });
 
 async function main() {
   const store = await openai.vectorStores.create({
