@@ -40,7 +40,9 @@ O texto deve ser claro, objetivo, impessoal e escrito em linguagem formal, respe
 
 ## 10. Delineamento da Pesquisa
 
-O delineamento define o tipo de pesquisa, a abordagem metodológica e os procedimentos adotados para alcançar os objetivos propostos.
+O delineamento da pesquisa define o tipo de estudo adotado no Trabalho de Conclusão de Curso, como pesquisa bibliográfica, documental, exploratória, descritiva ou experimental. Ele orienta a forma como a investigação será conduzida.
+
+A metodologia descreve os procedimentos utilizados para a coleta e análise de dados, garantindo coerência entre os objetivos do estudo, o método adotado e os resultados obtidos ao longo da pesquisa.
 
 ## 11. Aspectos Físicos e Estruturais do Trabalho
 
@@ -52,7 +54,9 @@ O projeto de pesquisa apresenta o planejamento do estudo, demonstrando sua viabi
 
 ## 13. Resultados Preliminares
 
-Os resultados preliminares representam achados iniciais que indicam o andamento da pesquisa.
+Os resultados preliminares correspondem às análises parciais obtidas durante o desenvolvimento da pesquisa. Eles permitem avaliar o andamento do trabalho e verificar se os objetivos estão sendo alcançados.
+
+Esses resultados são importantes para identificar a necessidade de ajustes metodológicos antes da conclusão do estudo, contribuindo para a qualidade do Trabalho de Conclusão de Curso.
 
 ## 14. O TCC (Documento Final)
 
@@ -64,7 +68,9 @@ A entrega consiste na submissão formal do documento final para avaliação.
 
 ## 16. Defesa do TCC
 
-A defesa é a apresentação oral do trabalho, acompanhada de arguição avaliativa.
+A defesa do TCC consiste em uma apresentação oral do trabalho realizada pelo estudante perante uma banca avaliadora. Nessa etapa, o aluno expõe os objetivos, metodologia e resultados da pesquisa.
+
+A defesa tem como finalidade avaliar a capacidade do estudante de justificar suas escolhas metodológicas e discutir os resultados obtidos, compondo a avaliação final do trabalho.
 
 ## 17. Provas Finais
 
@@ -77,3 +83,17 @@ Reconhecimento acadêmico concedido com base em critérios como originalidade, r
 ## 19. Regras Específicas
 
 Diretrizes adicionais que garantem padronização, ética e integridade acadêmica.
+
+## 20. Tipos de Citação
+
+As citações diretas curtas possuem até três linhas e devem ser inseridas no corpo do texto entre aspas, mantendo a formatação padrão do parágrafo.
+
+As citações diretas longas possuem mais de três linhas e devem ser apresentadas em parágrafo próprio, com recuo, espaçamento simples e fonte menor.
+
+As citações indiretas consistem na paráfrase das ideias do autor, sem o uso de aspas, devendo manter a referência à fonte original.
+
+## 21. Boas Práticas e Erros Comuns no TCC
+
+Boas práticas na redação e formatação do TCC incluem clareza textual, coerência entre as seções, padronização da formatação e revisão ortográfica e gramatical.
+
+Erros comuns que devem ser evitados incluem falta de padronização, citações incorretas, ausência de referências, plágio e incoerência entre objetivos, metodologia e resultados.
