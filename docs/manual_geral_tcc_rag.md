@@ -40,7 +40,9 @@ O texto deve ser claro, objetivo, impessoal e escrito em linguagem formal, respe
 
 ## 10. Delineamento da Pesquisa
 
-O delineamento da pesquisa define o tipo de estudo adotado no Trabalho de Conclusão de Curso, como pesquisa bibliográfica, documental, exploratória, descritiva ou experimental. Ele orienta a forma como a investigação será conduzida.
+O delineamento da pesquisa define o tipo de estudo adotado no Trabalho de Conclusão de Curso, como pesquisa bibliográfica, documental, exploratória, descritiva ou experimental. Ele orienta a forma geral como a investigação será conduzida.
+
+## 10.1 Papel da Metodologia no TCC
 
 A metodologia descreve os procedimentos utilizados para a coleta e análise de dados, garantindo coerência entre os objetivos do estudo, o método adotado e os resultados obtidos ao longo da pesquisa.
 
@@ -54,9 +56,11 @@ O projeto de pesquisa apresenta o planejamento do estudo, demonstrando sua viabi
 
 ## 13. Resultados Preliminares
 
-Os resultados preliminares correspondem às análises parciais obtidas durante o desenvolvimento da pesquisa. Eles permitem avaliar o andamento do trabalho e verificar se os objetivos estão sendo alcançados.
+Os resultados preliminares correspondem às análises parciais obtidas durante o desenvolvimento da pesquisa.
 
-Esses resultados são importantes para identificar a necessidade de ajustes metodológicos antes da conclusão do estudo, contribuindo para a qualidade do Trabalho de Conclusão de Curso.
+### Função dos Resultados Preliminares no TCC
+
+Os resultados preliminares permitem avaliar o andamento do trabalho e verificar se os objetivos estão sendo alcançados. Eles também possibilitam a identificação de eventuais necessidades de ajustes metodológicos antes da conclusão do estudo, contribuindo para a qualidade final do Trabalho de Conclusão de Curso.
 
 ## 14. O TCC (Documento Final)
 
@@ -86,14 +90,31 @@ Diretrizes adicionais que garantem padronização, ética e integridade acadêmi
 
 ## 20. Tipos de Citação
 
-As citações diretas curtas possuem até três linhas e devem ser inseridas no corpo do texto entre aspas, mantendo a formatação padrão do parágrafo.
+### Citação Direta Curta
 
-As citações diretas longas possuem mais de três linhas e devem ser apresentadas em parágrafo próprio, com recuo, espaçamento simples e fonte menor.
+Possui até três linhas e deve ser inserida no corpo do texto entre aspas, mantendo a formatação padrão do parágrafo.
 
-As citações indiretas consistem na paráfrase das ideias do autor, sem o uso de aspas, devendo manter a referência à fonte original.
+### Citação Direta Longa
+
+Possui mais de três linhas e deve ser apresentada em parágrafo próprio, com recuo, espaçamento simples e fonte menor.
+
+### Citação Indireta
+
+Consiste na paráfrase das ideias do autor, sem o uso de aspas, mantendo a referência à fonte original.
 
 ## 21. Boas Práticas e Erros Comuns no TCC
 
-Boas práticas na redação e formatação do TCC incluem clareza textual, coerência entre as seções, padronização da formatação e revisão ortográfica e gramatical.
+### Boas Práticas
 
-Erros comuns que devem ser evitados incluem falta de padronização, citações incorretas, ausência de referências, plágio e incoerência entre objetivos, metodologia e resultados.
+- Clareza textual
+- Coerência entre as seções do trabalho
+- Padronização da formatação
+- Revisão ortográfica e gramatical
+
+### Erros Comuns
+
+- Falta de padronização
+- Uso incorreto de citações
+- Ausência de referências
+- Plágio
+- Incoerência entre objetivos, metodologia e resultados

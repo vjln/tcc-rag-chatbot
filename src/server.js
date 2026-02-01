@@ -6,6 +6,7 @@ import rateLimit from "express-rate-limit";
 import OpenAI from "openai";
 
 const app = express();
+const fileNameCache = new Map();
 
 // Segurança básica
 app.use(helmet());
@@ -61,19 +62,34 @@ Responda sempre com base exclusivamente nos documentos fornecidos.
 Explique os conceitos de forma clara, objetiva e didática.
 
 Regras obrigatórias:
+
+- Utilize apenas informações explicitamente presentes nos documentos fornecidos.
+  Não complemente a resposta com conhecimentos gerais, inferências externas ou boas práticas não documentadas.
+
 - Quando a pergunta envolver um conceito teórico ou metodológico, explique:
   (1) o que é o conceito
-  (2) qual é a sua função no TCC.
-- Quando a pergunta envolver comparação (ex.: tipos de citação), descreva claramente
-  as diferenças entre os elementos, preferencialmente em itens separados.
-- Quando a pergunta envolver etapas, fases ou processos, apresente a resposta de forma estruturada,
-  indicando a sequência lógica.
+  (2) qual é a sua função no TCC,
+  limitando-se às definições expressas nos documentos.
+
+- Se apenas parte da informação for encontrada, responda com o que foi encontrado e indique o que não foi localizado nos documentos.
+
+- Quando a pergunta envolver comparação (ex.: tipos de citação), descreva claramente as diferenças entre os elementos, apresentando definições separadas e contrastivas, preferencialmente em itens.
+
+- Quando a pergunta envolver etapas, fases ou processos, apresente a resposta de forma estruturada, indicando a sequência lógica exatamente conforme descrita nos documentos.
+
+- Quando a pergunta envolver normas técnicas ou formatação, priorize a apresentação de listas ou checklists objetivos, evitando generalizações.
+
+- Quando a pergunta for ampla ou envolver “boas práticas”, enumere apenas aquelas explicitamente mencionadas nos documentos, sem ampliar o escopo.
+
 - Não invente informações que não estejam presentes nos documentos.
-- Caso a informação não esteja disponível na base, informe explicitamente que não foi encontrada.
+
+- Caso a informação solicitada não esteja disponível na base documental, informe explicitamente que a informação não foi encontrada.
 
 Use linguagem acadêmica clara, sem excesso de formalismo.
+Quando responder com listas/checklists, inclua a fonte ao final da lista.
 Evite respostas excessivamente curtas ou genéricas.
-Sempre que possível, forneça citações dos documentos utilizados na resposta, incluindo o nome do arquivo.`,
+Ao final da resposta, inclua uma seção “Fontes” listando os nomes dos arquivos utilizados. Se nenhum trecho for utilizado, escreva “Fontes: não localizadas”.
+`,
         },
         { role: "user", content: question },
       ],
@@ -81,8 +97,11 @@ Sempre que possível, forneça citações dos documentos utilizados na resposta,
         {
           type: "file_search",
           vector_store_ids: [VECTOR_STORE_ID],
+          max_num_results: 12,
         },
       ],
+      tool_choice: { type: "file_search" },
+      top_p: 1,
       temperature: 0.0,
     });
 
@@ -120,7 +139,6 @@ Sempre que possível, forneça citações dos documentos utilizados na resposta,
     }
 
     // Resolve filename (best-effort) caso não venha no annotation
-    const fileNameCache = new Map();
     for (const c of byFile.values()) {
       if (c.file_name) continue;
 
@@ -141,14 +159,12 @@ Sempre que possível, forneça citações dos documentos utilizados na resposta,
       file_name: s.file_name,
     }));
 
-    if (sources.length === 0) {
-      return res.json({
-        answer: "Não encontrei essa informação no material fornecido.",
-        sources: [],
-      });
-    }
+    const finalAnswer =
+      sources.length === 0
+        ? `${answer}\n\nObs.: Não foi possível identificar a fonte documental utilizada.`
+        : answer;
 
-    res.json({ answer, sources });
+    return res.json({ answer: finalAnswer, sources });
   } catch (err) {
     const msg = err?.error?.message || err?.message || "Erro desconhecido";
     res.status(500).json({ error: msg });

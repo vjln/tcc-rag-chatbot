@@ -105,3 +105,28 @@ Organizadas em ordem alfabética, padronizadas e contendo apenas obras citadas.
 ## 18. Regras Gerais
 
 O texto deve ser original, coerente, ético e padronizado.
+
+## 19. Configurações Obrigatórias de Formatação do TCC
+
+As configurações obrigatórias de formatação do Trabalho de Conclusão de Curso (TCC) são:
+
+- Papel: A4
+- Orientação: Retrato
+- Fonte: Times New Roman ou Arial
+- Tamanho da fonte:
+  - Texto principal: 12
+  - Citações longas: 10
+- Cor da fonte: Preta
+- Margens:
+  - Superior: 3 cm
+  - Esquerda: 3 cm
+  - Inferior: 2 cm
+  - Direita: 2 cm
+- Espaçamento:
+  - Texto principal: 1,5
+  - Citações longas: simples
+  - Referências: simples, com espaço duplo entre itens
+- Parágrafo:
+  - Recuo da primeira linha: 1,25 cm
+  - Texto justificado
+  - Sem espaçamento adicional entre parágrafos
