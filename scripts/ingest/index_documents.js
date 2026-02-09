@@ -9,7 +9,7 @@ const openai = new OpenAI({ apiKey: process.env.API_KEY });
 const VECTOR_STORE_ID = (process.env.VECTOR_STORE_ID || "").trim();
 
 // aqui o nome do doc dentro de docs
-const FILE_PATH = "../docs/cronograma_entregas_rag.md";
+const FILE_PATH = "../../docs/manual_formatacao_rag.md";
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
